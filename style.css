@@ -426,7 +426,7 @@ nav button{
     padding-top: 8.5vw;
 }
 .page6{
-    height: 72vh;
+    height: 65vh;
     width: 100vw;
     color: #111;
     padding: 6vw 6vw;
@@ -542,7 +542,7 @@ nav button{
     display: flex;
     align-items:center;
     justify-content: flex-end;
-    gap: 2vw;
+    gap: 6vw;
     padding-right: 6.2vw;
 }
 .page8Common{
@@ -943,6 +943,9 @@ nav button{
 }
 #btm6-part2 h4:nth-child(7){
     transform: translateX(50%);
+}
+#btm-part3 h4:nth-child(1){
+    transform: translateX(0);
 }
 #page7 {
     height: 100vh;

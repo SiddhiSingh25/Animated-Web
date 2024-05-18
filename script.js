@@ -1,3 +1,9 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('.container'),
+    smooth: true,
+    lerp : 0.05
+});
+/*
 function locomotiveAnimation() {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -74,7 +80,7 @@ const scrollChange = () => {
     document.addEventListener("scroll", function () {
         navbar.style.height = "8vh";
     })
-};
+};*/
 const cursorImgAnime = () => {
     document.querySelectorAll(".rightelm").forEach((elm) => {
     console.log(elm.childNodes)
@@ -161,7 +167,7 @@ const page7Anime = () => {
     })
 };
 //navAnim();
-scrollChange();
+//scrollChange();
 cursorImgAnime();
 playfun();
 page7Anime();

@@ -1200,16 +1200,18 @@ nav button{
     }
     .moving-box {
         height: 5vh;
-        width: 100%;
+        width: 94vw;
     }
     .page2{
         flex-direction: column;
+        min-height: 130vh;
     }
     .leftpart {
-        height: 22%;
+        height: 15%;
         width: 100%;
         flex-direction: column;
         padding: 3.5vw 0 3.5vw 0;
+        margin-bottom: 8vh;
     }
     .leftpart h3{
         font-size: 1.8vh;
@@ -1222,29 +1224,32 @@ nav button{
     }
     .rightpart{
         width: 100vw;
+        min-height: 100vh;
+        padding-bottom: 10vh;
     }
     .rightpart {
         width: 100vw;
         padding: 0 6vw;
     }
     .rightelm{
-        height: 20vh;
+        height: 22vh;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
+        margin-bottom: 1vh;
     }
     .rightelmstyle{
         flex-direction: column;
         padding: 0.75vh 0;
     }
     .rightelmstyle h2 {
-        font-size: 2.25vh;
+        font-size: 2.7vh;
         width: 100%;
     }
     .rightelmstyle h5{
-        font-size: 1vh;
+        font-size: 1.95vh;
         width: 90%;
         position: relative;
     }
@@ -1257,8 +1262,8 @@ nav button{
         bottom: 3%;
     }
     .rightelm img {
-        height: 10vh;
-        width: 10vh;
+        height: 8.2vh;
+        width: 8.2vh;
         z-index: 0;
         object-position: center;
         position: relative;
@@ -1271,5 +1276,32 @@ nav button{
     }
     .imgBigScreen{
         display: none;
+    }
+    .page3{
+        height: 45vh;
+    }
+    .page4 {
+        height: 70vh;
+        width: 100vw;
+        padding: 7vw 6vw;
+        padding-bottom: 0vw;
+        flex-direction: column;
+    }
+    .page4left{
+        width: 100%;
+    }
+    .page4right{
+        width: 100%;
+    }
+    .page4left h2 {
+        font-size: 5vh;
+        color: #111;
+        text-align: center;
+    }
+    .page4right h4 {
+        font-size: 2vh;
+    }
+    .page4right h5{
+        font-size: 1.5vh;
     }
 }

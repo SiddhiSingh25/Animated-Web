@@ -213,6 +213,14 @@ nav button{
     padding: 0 6vw 0 6vw;
     border-top: 1px solid #333;
 }
+.imgResponsive{
+    display: none;
+    opacity: 0;
+    scale: 0;
+}
+.imgBigScreen{
+    display: block;
+}
 .leftpart{
     height: 100%;
     width: 40%;
@@ -253,6 +261,10 @@ nav button{
     border-top: 1px solid #333;
     padding-top: 0.8vw;
     position: relative;
+}
+.rightelmstyle h5 {
+    font-size: 2vh;
+    width: 90%;
 }
 .rightelmstyle h2{
     font-size: 1.7vw;
@@ -1122,7 +1134,7 @@ nav button{
     display:flex;
     width: 100vw;
 }
-@media (max-width:600px){
+@media (max-width:700px){
     nav{
         padding: 2.3vw 6vw 0.7vw 6vw;
     }
@@ -1214,5 +1226,50 @@ nav button{
     .rightpart {
         width: 100vw;
         padding: 0 6vw;
+    }
+    .rightelm{
+        height: 20vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .rightelmstyle{
+        flex-direction: column;
+        padding: 0.75vh 0;
+    }
+    .rightelmstyle h2 {
+        font-size: 2.25vh;
+        width: 100%;
+    }
+    .rightelmstyle h5{
+        font-size: 1vh;
+        width: 90%;
+        position: relative;
+    }
+    .rightelmstyle svg{
+        height: 2vh;
+        width: 1.25vh;
+        font-weight: 400;
+        position: absolute;
+        right: 0;
+        bottom: 3%;
+    }
+    .rightelm img {
+        height: 10vh;
+        width: 10vh;
+        z-index: 0;
+        object-position: center;
+        position: relative;
+        left: 0;
+    }
+    .rightelmstyle img{
+        display: block;
+        opacity: 1;
+        scale: 1;
+    }
+    .imgBigScreen{
+        display: none;
     }
 }

@@ -77,7 +77,7 @@ const scrollChange = () => {
 };
 const cursorImgAnime = () => {
     document.querySelectorAll(".rightelm").forEach((elm) => {
-        console.log(elm.childNodes);
+    console.log(elm.childNodes)
         elm.addEventListener("mouseenter", () => {
             elm.style.borderTop = "1.7px solid white"
             gsap.to(elm.childNodes[3], {
@@ -203,7 +203,7 @@ function page6Animations() {
 document.querySelector(".imgAnime").addEventListener("mouseenter", ()=>{
     gsap.to(".rectangle img", {
         opacity : 1,
-        transform: "scaleX(1) scaleY(1)"
+        transfvarorm: "scaleX(1) scaleY(1)"
     })
 })
 document.querySelector(".imgAnime").addEventListener("mousemove", (dets)=>{
@@ -228,3 +228,13 @@ document.querySelector(".imgAnime").addEventListener("mouseleave", ()=>{
     stagger: 0.5,
     opacity:0
 })*/
+
+
+let style = document.createElement('style');
+let screenWidth = window.innerWidth || document.documentElement.clientWidth;
+const responsive = ()=>{
+    if( screenWidth <= 700 ){
+        document.querySelector(".page1").childNodes[1].innerHTML = "AI & ML Product";
+    }
+}
+window.addEventListener('resize', responsive);

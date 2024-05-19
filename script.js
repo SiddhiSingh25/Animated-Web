@@ -38,7 +38,7 @@ function locomotiveAnimation() {
     ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
     ScrollTrigger.refresh();
-}
+}*/
 
 const navAnim = () => {
     let nav = document.querySelector(".nav-headings");
@@ -80,7 +80,7 @@ const scrollChange = () => {
     document.addEventListener("scroll", function () {
         navbar.style.height = "8vh";
     })
-};*/
+};
 const cursorImgAnime = () => {
     document.querySelectorAll(".rightelm").forEach((elm) => {
     console.log(elm.childNodes)
@@ -167,7 +167,7 @@ const page7Anime = () => {
     })
 };
 //navAnim();
-//scrollChange();
+scrollChange();
 cursorImgAnime();
 playfun();
 page7Anime();
@@ -241,6 +241,50 @@ let screenWidth = window.innerWidth || document.documentElement.clientWidth;
 const responsive = ()=>{
     if( screenWidth <= 700 ){
         document.querySelector(".page1").childNodes[1].innerHTML = "AI & ML Product";
+        var pageElement = document.querySelector('.page3');
+            // Log the current value of the data-scroll-speed attribute
+            console.log('Current data-scroll-speed:', pageElement.getAttribute('data-scroll-speed'));
+            // Remove the data-scroll-speed attribute
+            pageElement.removeAttribute('data-scroll-speed');
+            // Confirm the removal
+            console.log('data-scroll-speed attribute removed:', !pageElement.hasAttribute('data-scroll-speed'));
+            document.querySelector(".page1").style.transform = 'scale(1, 1)';
     }
 }
 window.addEventListener('resize', responsive);
+gsap.from(".page1",{
+    transform: 'scaleX(0.7) scaleY(0)',
+    delay : 0.3,
+    duration:2,
+    animation: 'all videoanime 5s linear infinite'
+})
+gsap.to("nav",{
+    opacity:1,
+    delay: 1.6,
+    duration:1.2,
+    height : '11vh'
+})
+gsap.from(".first",{
+    y: 130,
+    delay:0.7,
+    duration : 0.7,
+    stagger: 0.6,
+    opacity:0
+})
+gsap.from(".second",{
+    y: 100,
+    delay : 1.3,
+    duration : 0.7,
+    stagger: 0.6,
+    opacity:0
+})
+gsap.to(".page1 p, .page1-buttons",{
+    y:-40,
+    delay :2,
+    duration:1,
+    opacity:1
+})
+gsap.to(".moving-box",{
+    opacity:1,
+    delay:2
+})

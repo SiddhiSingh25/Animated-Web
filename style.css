@@ -32,6 +32,7 @@ nav{
     align-items: flex-start;
     justify-content: space-between;
     background-color: #111;
+    opacity: 0;
 }
 nav h2{
     font-size: 1.62vw;
@@ -98,7 +99,7 @@ nav button{
     justify-content: center;
 }
 .page1{
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     background-color: #111;
     flex-direction: column;
@@ -106,17 +107,20 @@ nav button{
     align-items: center;
     justify-content: center;
     position: relative;
+    /*transform: scaleX(0.2) scaleY(0);
+    animation: all videoanime 5s linear infinite;*/
 }
 .page1 h1{
-    font-size: 8vw;
+    font-size: 8.6vw;
     text-transform: uppercase;
-    line-height: 7.5vw;
+    line-height: 7.9vw;
     font-weight: 900;
     word-spacing: -15px; 
-   
+    opacity: 1;
 }
 .first{
     letter-spacing: -2px;
+    margin-top: 15vh;
 }
 .first svg{
     height: 5.7vw;
@@ -128,9 +132,10 @@ nav button{
 .page1 p{
     color: #e6e6e6;
     width: 35vw;
-    margin-top: 35px;
+    margin-top: 14vh;/*35*/
     font-size: 1vw;
     text-align: center;
+    opacity: 0;
 }
 .page1-buttons{
     width: 40vw;
@@ -139,7 +144,9 @@ nav button{
     justify-content: center;
     flex-direction: row;
     gap: 5px;
-    margin-top: 5px;
+    margin-top: 2.5vh;
+    margin-bottom: 1vh;
+    opacity: 0;
 }
 .page1-buttons h5{
     padding: 6px 8px;
@@ -163,6 +170,7 @@ nav button{
     z-index: 0;
     white-space: nowrap;
     overflow: hidden;
+    opacity: 0;
 }
 .move-container{
     height: 100%;
@@ -1034,7 +1042,8 @@ nav button{
 .trophy{
     height: 28vh;
     width: 24%;
-    border: 1px solid yellow;
+    background-color: #1f1f1f;
+    color: #fff;
     font-size: 10vw;
     display: flex;
     align-items: center;
@@ -1048,7 +1057,7 @@ nav button{
     align-self: flex-start;
     margin: 0;
 }
-.trophy h2{
+.trophy svg{
     font-size: 6vw;
     font-weight: 500;
     margin: 0;
@@ -1125,6 +1134,7 @@ nav button{
 }
 .footerIcon img{
     margin-left: 0.8vw;
+    filter: invert(1) brightness(2);
 }
 .alpha:hover #year{
     padding: 0;
@@ -1142,7 +1152,7 @@ nav button{
         padding: 2.3vw 6vw 0.7vw 6vw;
     }
     nav h2{
-        font-size: 3.05vh;
+        font-size: 3.85vh;
     }
     .nav-footer{
         border-top: none;
@@ -1152,8 +1162,8 @@ nav button{
     }
     nav button{
         padding:0;
-        height: 4.5vh;
-        width: 4.5vh;
+        height: 4.8vh;
+        width: 4.8vh;
     }
     nav button p{
         display: none;
@@ -1176,9 +1186,13 @@ nav button{
     .page1 p{
         color: #e6e6e6;
         width: 59vw;
-        margin-top: 2vh;
+        /*margin-top: 2vh;*/
+        margin-top: 6vh;
         font-size: 2.5vh;
         text-align: left;
+    }
+    .first{
+        margin-top: 0vh;
     }
     .page1-buttons h5 {
         padding: 10px 16px;
@@ -1317,6 +1331,7 @@ nav button{
     .page5 {
         min-height: 210vh;
         padding-top: 12vh;
+        row-gap: 1.55vh;
     }
     .containerBox {
         height: 32vh;
@@ -1374,6 +1389,283 @@ nav button{
         display: inline-block;
         height: 90%;
         font-size: 4vh;
+        font-weight: 400;
+    }
+    .page7 {
+        height: 90vh;
+        width: 100vw;
+        padding: 6.5vw 6vw;
+        flex-direction: column;
+    }
+    .page7left p {
+        font-size: 2.2vh;
+        color: #111;
+        font-weight: 400;
+        margin-top: 1vh;
+        width: 90%;
+    }
+    .page7left {
+        width: 100%;
+        height: 35%;
+        padding: 1.2vw 0;
+        position: relative;
+    }
+    .page7left button i {
+        rotate: 45deg;
+        color: #ffffff;
+        font-weight: 600;
+        margin-left: 0.2vw;
+        font-size: 1.4vh;
+    }
+    .page7left h2 {
+        font-size: 4.5vh;
+        color: #111;
         font-weight: 500;
+    }
+    .page7left button {
+        height: 4vh;
+        width: 40%;
+        background-color: #4f5bff;
+        position: absolute;
+        bottom: 0;
+        font-size: 1.35vh;
+        border-radius: 4.2vw;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 1.2vh;
+    }
+    .page7right {
+        width: 100%;
+        height: 70%;
+    }
+    .page8 {
+        min-height: 200vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 6vw;
+        flex-direction: column;
+        padding: 0 6vw;
+    }
+    .page8Common h1 {
+        border-top: 2px solid #e0e0e0;
+        padding-top: 1.6vw;
+        color: #111;
+        font-weight: 500;
+        font-size: 4.2vh;
+        height: 10%;
+    }
+    .page8Common p {
+        font-size: 2.3vh;
+        color: #111;
+        z-index: 1;
+        width: 100%;
+    }
+    .page8Common {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .page8Common img {
+        height: 65%;
+        width: 100%;
+    }
+    .page8Common video{
+        height: 70%;
+    }
+    .page9Top{
+        width: 100%;
+    }
+    .page9Bottom{
+        flex-direction: column-reverse;
+    }
+    .page9 h2 {
+        font-size: 4.5vh;
+        color: #fff;
+        text-transform: capitalize;
+        text-align: left;
+        line-height: 7.3vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page9BottomLeft {
+        width: 100%;
+        min-height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .page9BottomRight {
+        width: 100%;
+        min-height: 155vh;
+    }
+    .page9BottomRight span{
+        display: none;
+    }
+    .page9BottomRight h3 {
+        font-size: 1.8vh;
+        font-weight: 400;
+        padding-bottom: 7vw;
+    }
+    .page9BoXBottom p {
+        display: inline-block;
+        padding: 1vh 2.4vh;
+        border: 1px solid #d2d2d2;
+        border-radius: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.35vh;
+        margin-bottom: 1vh;
+    }
+    .page9BoXBottom{
+        margin-bottom: 3vh;
+    }
+    .page9BoxCommon h1 {
+        font-size: 2.7vh;
+    }
+    .page9BoxCommon p {
+        font-size: 2.2vh;
+    }
+    .page9BottomLeft{
+        justify-content: flex-start;
+    }
+    .page9BottomLeft button {
+        padding: 1.5vh 4.5vh;
+        font-size: 1.8vh;
+        text-transform: uppercase;
+        border-radius: 3.5vh;
+        position: sticky;
+        top: 12%;
+    }
+    .page9BoxCommon i {
+        font-size: 1.5vh;
+    }
+    .page9BotoomBoxDivSec{
+        height: 28vh;
+    } 
+    .page9BottomLeft i {
+        font-size: 1.5vh;
+        margin-left: 8px;
+    }
+    #page6 {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        padding: 6.5vh 10vw;
+    }
+    #page6 > h1 {
+        font-size: 6vh;
+        color: #000;
+        padding-left: 0;
+        padding-right: 0;
+        line-height: 10.2vw;
+        padding-bottom: 6.5vh;
+        border-bottom: 1px solid #dadada;
+    }
+    #page6-content {
+        padding: 4vh 0;
+        flex-direction: column-reverse;
+    }
+    #blue-btn {
+        width: 19vh;
+        height: 4.1vh;
+    }
+    #page6-content #right-6 {
+        width: 100%;
+    }
+    #blue-btn h4 {
+        font-weight: 500;
+        font-size: 1.4vh;
+    }
+    #page6-content #right-6 p {
+        font-size: 2.2vh;
+        color: #000;
+        margin-bottom: 5vh;
+        width: 100%;
+    }
+    #btm6-part1{
+        display: none;
+    }
+    #page6-bottom{
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    #btm6-part2{
+        width: 70%;
+    }
+    .btm6-parts h5 {
+        font-size: 2vh;
+        margin-bottom: 2.5vh;
+    }
+    .btm6-parts h4 {
+        background-color: #111;
+        width: 75%;
+        padding: 8px 10px;
+        margin-bottom: 0.3vh;
+        border-radius: 50px;
+        font-size: 1.4vh;
+    }
+    #btm6-part2 {
+        width: 90%;
+    }
+    #btm6-part3 {
+        width: 90%;
+        height: 100%;
+    }
+    #btm6-part4{
+        width:90%;
+    }
+    #btm6-part5 {
+        width: 90%;
+    }
+    .awardSec {
+        height: 35vh;
+        width: 100vw;
+        padding: 4vw 6vw;
+        background-color: #111;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .awardSec h1{
+        font-size: 6vh;
+        width: 100%;
+        text-align: center;
+        line-height: 9.4vw;
+    }
+    .page10 {
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        background-color: #111;
+        color: #fff;
+        padding: 0 6vw;
+        padding-top: 3vw;
+        flex-direction: column-reverse;
+    }
+    .pg10right {
+        width: 100%;
+    }
+    .pg10right h1 {
+        font-size: 2.2vh;
+        font-weight: 500;
+        margin-bottom: 2.5vw;
+    }
+    .pg10right h2{
+        font-size: 2.2vh;
+    }
+    .pg10right h3 {
+        font-size: 4vh;
+    }
+    .pg10right h4 {
+        font-size: 4vh;
+        font-weight: 600;
+        line-height: 6.8vw;
+        margin-bottom: 4svw;
     }
 }

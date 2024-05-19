@@ -1,7 +1,13 @@
 const scroll = new LocomotiveScroll({
     el: document.querySelector('.container'),
     smooth: true,
-    lerp : 0.05
+    lerp : 0.05,
+    smartphone: {
+        smooth: true
+      },
+      tablet: {
+        smooth: true
+      }
 });
 /*
 function locomotiveAnimation() {

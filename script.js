@@ -9,7 +9,6 @@ const scroll = new LocomotiveScroll({
         smooth: true
       }
 });
-/*
 function locomotiveAnimation() {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -44,7 +43,7 @@ function locomotiveAnimation() {
     ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
     ScrollTrigger.refresh();
-}*/
+}
 
 const navAnim = () => {
     let nav = document.querySelector(".nav-headings");
